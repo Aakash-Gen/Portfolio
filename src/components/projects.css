@@ -1,9 +1,0 @@
-.group:hover .absolute {
-    opacity: 0.9;
-  }
-  
-  .group .absolute {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  

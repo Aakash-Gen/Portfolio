@@ -1,4 +1,3 @@
-// import './projects.css';
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -11,12 +10,12 @@ function Projects() {
         { title: "Chatblock", description: "Developed a dynamic conversational payments application using React.js and Tailwind CSS, integrating Gemini API for chatbot functionality. Incorporated blockchain transactions through Neucron API and ensured data integrity and security with Firebase." , image:"src/assets/ChatBlock.png" },
         { title: "Skyzone", description: "Developed a dynamic car showcase and inventory browsing feature using React and Tailwind CSS. Enhanced user experience with intuitive navigation, interactive elements, and detailed car information to aid in purchasing decisions.", image: "src/assets/Skyzone.png" },
         { title: "Chain Chest", description: "Chain Chest provides secure, blockchain-based data storage and sharing, ensuring data integrity, immutability, and accessibility. Simplifying data management, it fortifies sensitive information against breaches and tampering while enabling effortless, trusted sharing", image: "src/assets/Chain-chest.jpeg" },
-        { title: "Nexus", description: "hello", image: "src/assets/Nexus.png"}
+        { title: "Nexus", description:"Nexus is a real-time chat application which enables seamless one-to-one messaging, allowing users to engage in private conversations. Additionally, Nexus offers group chat functionality, enabling users to join multi-participant conversations by entering a room code. With Firebase authentication integration, user security and authorization are prioritized.", image: "src/assets/Nexus.png"}
       ];
     
   return (
     <div className="h-full bg-[#deccc3]">
-        <h1 className="text-4xl text-gray-500 font-medium pt-40 pl-32 pb-10">My Projects</h1>
+        <h1 className="text-6xl text-gray-600 font-bold pt-40 pl-32 pb-24">My Projects</h1>
         <div className="flex flex-col justify-center items-center">
         {projects.map((project, index) => (
         <Box
@@ -73,12 +72,9 @@ const boxVariant = {
         animate={control}
       >
         <h1 className="text-2xl font-medium mb-2">{title}</h1>
-        {/* <p>{description}</p> */}
-        {/* <img className="rounded-md" src={image} alt="" /> */}
         <img className="rounded-md w-full" src={image} alt={title} />
         <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500 rounded-md"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center rounded-lg pt-12">
-        {/* <h1 className="text-white text-2xl font-medium">{title}</h1> */}
             <p className="text-white text-md max-w-[80%] text-center mt-2">{description}</p>
             <div className="flex gap-4">
                 <div className="rounded-full bg-white p-3 mt-4">
