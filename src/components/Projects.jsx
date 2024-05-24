@@ -4,7 +4,6 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 
-
 function Projects() {
     const projects = [
         { title: "Chatblock", description: "Developed a dynamic conversational payments application using React.js and Tailwind CSS, integrating Gemini API for chatbot functionality. Incorporated blockchain transactions through Neucron API and ensured data integrity and security with Firebase." , image:"src/assets/ChatBlock.png" },
