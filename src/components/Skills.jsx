@@ -1,8 +1,7 @@
 
 function Skills() {
   return (
-    <div className="h-full flex justify-center pb-24 ">
-        {/* <h1 className="text-gray-600 text-4xl">Technical Skills</h1> */}
+    <div id="skills" className="h-full flex justify-center pb-24 pt-12 ">
         <div className=" flex flex-wrap w-[70%] justify-center items-center gap-4 p-6">
             <Badge background="bg-blue-700" name="C++" />
             <Badge background="bg-yellow-600" name="Python"/>

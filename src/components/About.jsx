@@ -1,8 +1,9 @@
-import React from 'react'
+import Skills from './Skills'
 
 function About() {
   return (
-    <div className='h-screen grid grid-cols-5 mt-14'>
+    <div id='about' className='h-full mt-14'>
+        <div className=' grid grid-cols-5'>
         <div className='col-span-2 flex items-center justify-end mt-14'>
             <img className='h-[500px] w-[420px] rounded-lg shadow-md' src="src/assets/WhatsApp Image 2024-04-10 at 14.36.26.jpeg" alt="" />
         </div>
@@ -19,6 +20,8 @@ function About() {
                 whether it's a freelance gig, internship opportunity, or a full-fledged collaboration. Let's harness the power of technology to create something truly remarkable together.
             </p>
         </div>
+    </div>
+    <Skills/>
     </div>
   )
 }

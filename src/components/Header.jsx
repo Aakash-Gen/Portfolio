@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 
 function Header(props) {
   const getUnderlineClass = (section) => {
@@ -6,14 +7,15 @@ function Header(props) {
 
   return (
     <div className={`h-14 w-full fixed z-10 top-0 flex justify-between ${props.headerColour} ${props.headerBg} items-center px-24 py-10`}>
-        <h1 className={`text-4xl font-semibold ${getUnderlineClass('Home')}`}>Portfolio</h1>
+        <Link to="home" spy={true} smooth={true} duration={500} offset={-70} className={`hover:cursor-pointer text-4xl font-semibold ${getUnderlineClass('Home')}`} >Portfolio</Link>
         <div className='flex justify-evenly gap-12 text-2xl font-medium'>
-            <h2 className={getUnderlineClass('About')} >About</h2>
-            <h2 className={getUnderlineClass('Projects')} >Projects</h2>
-            {/* <h2 className={getUnderlineClass('Skills')} >Skills</h2> */}
-            <h2 className={getUnderlineClass('Contact')} >Contact</h2>
+            <Link to="about" spy={true} smooth={true} duration={500} offset={-70} className={`hover:cursor-pointer ${getUnderlineClass('About')}`} >About</Link>
+            <Link to="skills" spy={true} smooth={true} duration={500} offset={-70} className={`hover:cursor-pointer ${getUnderlineClass('Skills')}`} >Skills</Link>
+            <Link to="projects" spy={true} smooth={true} duration={500} offset={-70} className={`hover:cursor-pointer ${getUnderlineClass('Projects')}`} >Projects</Link>
         </div>
-        <button className='bg-[#D07C43] px-6 py-1.5 rounded-lg text-xl '>Hire Me</button>
+        <Link to="contact" spy={true} smooth={true} duration={500} offset={-70} className="hover:cursor-pointer" >
+          <button className='bg-[#D07C43] px-6 py-1.5 rounded-lg text-xl '>Contact</button>
+        </Link>
     </div>
   )
 }
