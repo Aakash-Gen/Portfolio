@@ -11,7 +11,7 @@ function Header(props) {
             <h2 className={getUnderlineClass('About')} >About</h2>
             <h2 className={getUnderlineClass('Projects')} >Projects</h2>
             {/* <h2 className={getUnderlineClass('Skills')} >Skills</h2> */}
-            <h2 className={getUnderlineClass('Resume')} >Resume</h2>
+            <h2 className={getUnderlineClass('Contact')} >Contact</h2>
         </div>
         <button className='bg-[#D07C43] px-6 py-1.5 rounded-lg text-xl '>Hire Me</button>
     </div>

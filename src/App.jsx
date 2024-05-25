@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import { useInView } from 'react-intersection-observer';
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 
 function App() {
@@ -28,6 +29,10 @@ function App() {
     threshold: 0.1,
   });
 
+  const { ref: contactRef, inView: contactInView } = useInView({
+    threshold: 0.1,
+  });
+
   useEffect(()=>{
     if (homeInView) {
       setHeaderColour('text-white');
@@ -45,8 +50,12 @@ function App() {
       setHeaderColour('text-black');
       setHeaderBg('bg-white') 
       setCurrentSection('Skills')
+    } else if (contactInView) {
+      setHeaderColour('text-white');
+      setHeaderBg('') 
+      setCurrentSection('Contact')
     }
-  },[homeInView,aboutInView,projectsInView, skillsInView])
+  },[homeInView,aboutInView,projectsInView, skillsInView,contactInView])
   return (
     <div>
       <Header headerBg={headerBg} headerColour={headerColour} currentSection={currentSection} />
@@ -62,9 +71,9 @@ function App() {
       <div ref={projectsRef}>
         <Projects/>
       </div>
-      {/* <div ref={skillsRef}>
-        <Skills/>
-      </div> */}
+      <div ref={contactRef}>
+        <Contact/>
+      </div>
     </div>
   )
 }

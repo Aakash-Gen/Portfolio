@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 function Projects() {
     const projects = [
-        { title: "Chatblock", description: "Developed a dynamic conversational payments application using React.js and Tailwind CSS, integrating Gemini API for chatbot functionality. Incorporated blockchain transactions through Neucron API and ensured data integrity and security with Firebase." , image:"src/assets/ChatBlock.png" },
+        { title: "Chatblock", description: "Developed a dynamic conversational payments application using React.js and Tailwind CSS, integrating Gemini API for chatbot functionality. Incorporated blockchain transactions through Neucron API and ensured data integrity and security with Firebase." , image:"src/assets/ChatBlock.png", url:"https://github.com/Aakash-Gen/chatblock" },
         { title: "Skyzone", description: "Developed a dynamic car showcase and inventory browsing feature using React and Tailwind CSS. Enhanced user experience with intuitive navigation, interactive elements, and detailed car information to aid in purchasing decisions.", image: "src/assets/Skyzone.png" },
         { title: "Chain Chest", description: "Chain Chest provides secure, blockchain-based data storage and sharing, ensuring data integrity, immutability, and accessibility. Simplifying data management, it fortifies sensitive information against breaches and tampering while enabling effortless, trusted sharing", image: "src/assets/Chain-chest.jpeg" },
         { title: "Nexus", description:"Nexus is a real-time chat application which enables seamless one-to-one messaging, allowing users to engage in private conversations. Additionally, Nexus offers group chat functionality, enabling users to join multi-participant conversations by entering a room code. With Firebase authentication integration, user security and authorization are prioritized.", image: "src/assets/Nexus.png"}
@@ -50,7 +50,7 @@ const boxVariant = {
     hidden: { opacity: 0, scale: 0 }
   };
   
-  const Box = ({ title, description,image }) => {
+  const Box = ({ title, description,image,url }) => {
     const control = useAnimation();
     const [ref, inView] = useInView();
   
@@ -79,13 +79,20 @@ const boxVariant = {
                 <div className="rounded-full bg-white p-3 mt-4">
                   <FaExternalLinkAlt size={26} />
                 </div>
-                <div className="rounded-full bg-white p-3 mt-4">
-                  <FaGithub size={26}/>
+                {/* <a href={url} target="_blank" rel="noopener noreferrer" className="rounded-full bg-white p-3 mt-4">
+                    <FaGithub size={26} />
+                </a> */}
+                <div onClick={()=>githubProject(url)} className="rounded-full bg-white p-3 mt-4">
+                  <FaGithub onClick={()=>githubProject(url)} size={26} />
                 </div>
             </div>
         </div>
       </motion.div>
     );
   };
+
+  const githubProject =(url)=>{
+    window.location.href = `${url}`;
+  }
 
 export default Projects

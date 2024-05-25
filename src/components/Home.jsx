@@ -3,6 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { handleGithubClick, handleInstagramClick, handleLinkedInClick, handleTwitterClick } from "./Contact";
 
 
 function Home() {
@@ -20,10 +21,10 @@ function Home() {
             <div className="h-[1px] bg-gray-400 w-[300px]"></div>
             <div className="flex items-center gap-2">
               <p className="text-gray-300 mb">Let's connect - </p>
-              <FaLinkedin color="white"/>
-              <FaGithub color="white"/>
-              <FaXTwitter color="white"/>
-              <FaInstagram color="white"/>
+              <FaLinkedin className="hover:cursor-pointer" onClick={handleLinkedInClick} color="white"/>
+              <FaGithub className="hover:cursor-pointer" onClick={handleGithubClick} color="white"/>
+              <FaXTwitter className="hover:cursor-pointer" onClick={handleTwitterClick} color="white"/>
+              <FaInstagram className="hover:cursor-pointer" onClick={handleInstagramClick} color="white"/>
             </div>
           </div>
         </div>
