@@ -41,7 +41,7 @@ function Home() {
           </div>
         </div>
         <div className="col-span-3 flex flex-col-reverse items-center">
-          <img className="mr-32 h-[600px] w-[600px] " src="src/assets/image_processing20230125-21110-cfvm2t-removebg-preview.png" alt="" />
+          <img className="mr-32 h-[600px] w-[600px] " src="/HomePage.png" alt="" />
         </div>
       </div>
   )
