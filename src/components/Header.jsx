@@ -1,9 +1,17 @@
+import { useState } from "react";
 import { Link } from "react-scroll";
 
 function Header(props) {
+  // const [currentSection1,setCurrentSection1] =useState("Home");
   const getUnderlineClass = (section) => {
     return props.currentSection === section ? 'border-b-4 border-[#D07C43]' : '';
   };
+
+  // const getUnderlineOnClick =()=>{
+  //   return  currentSection1==="Skills" ? 'border-b-4 border-[#D07C43]' : '';
+  // }
+
+  
 
   return (
     <div className={`h-14 w-full fixed z-10 top-0 flex justify-between ${props.headerColour} ${props.headerBg} items-center px-24 py-10`}>

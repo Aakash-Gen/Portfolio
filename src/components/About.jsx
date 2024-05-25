@@ -21,7 +21,7 @@ function About() {
             </p>
         </div>
     </div>
-    <Skills/>
+        <Skills/>
     </div>
   )
 }

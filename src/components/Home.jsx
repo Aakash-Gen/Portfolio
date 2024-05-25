@@ -12,7 +12,14 @@ function Home() {
             <p className="text-white text-[44px] font-bold ">I'm Aakash, a</p>
             <p className="text-white text-[44px] font-bold mb-2 ">Full stack web-developer</p>
             <p className="text-gray-300 text-lg mb-6">"Design. Develop. Deploy."</p>
-            <button className='bg-[#D07C43] px-6 py-3 rounded-lg w-40 text-white text-xl'>Get in Touch</button>
+            {/* <button className='bg-[#D07C43] px-6 py-3 rounded-lg w-40 text-white text-xl'>Get in Touch</button> */}
+            <a 
+                href="/resume.pdf" 
+                download 
+                className="bg-[#D07C43] px-6 py-3 rounded-lg w-40 text-white text-xl hover:cursor-pointer shadow-md"
+            >
+                My Resume
+            </a>
           </div>
           <div className="pb-14 pl-20 flex flex-col gap-2">
             <div className="h-[1px] bg-gray-400 w-[300px]"></div>
