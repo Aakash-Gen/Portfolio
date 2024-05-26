@@ -17,7 +17,7 @@ function Contact() {
             reply_to:email
         };
 
-        emailjs.send('service_jo7p31g', 'template_uepncj8', templateParams, 'kr44HHiCJURdkePRW')
+        emailjs.send(import.meta.env.VITE_SERVICE_ID,import.meta.env.VITE_TEMPLATE_ID, templateParams, import.meta.env.VITE_PUBLIC_KEY)
             .then((response) => {
                 alert('Message sent!');
                 setEmail('');
