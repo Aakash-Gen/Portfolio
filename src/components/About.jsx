@@ -2,7 +2,7 @@ import Skills from './Skills'
 
 function About() {
   return (
-    <div id='about' className='h-full mt-14'>
+    <div id='about' className=' bg-[#EEE5E9] h-full pt-14'>
         <div className=' grid grid-cols-5'>
         <div className='col-span-2 flex items-center justify-end mt-14'>
             <img className='h-[500px] w-[420px] rounded-lg shadow-md' src="/Me.jpeg" alt="" />

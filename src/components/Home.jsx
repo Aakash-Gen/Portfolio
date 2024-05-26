@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 
 function Home() {
   return (
-      <div id="home" className="grid grid-cols-5 h-screen bg-[#171514]">
+      <div id="home" className="grid grid-cols-5 h-screen bg-[#141619]">
         <div className="flex flex-col col-span-2 justify-between pl-5">
           <div className=" flex flex-grow flex-col justify-center pl-20">
             <p className="text-white text-[44px] font-bold ">I'm Aakash, a</p>

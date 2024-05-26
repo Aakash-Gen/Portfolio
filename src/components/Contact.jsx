@@ -28,7 +28,7 @@ function Contact() {
             });
     };
   return (
-    <div id="contact" className="bg-[#171514] h-screen grid grid-cols-9">
+    <div id="contact" className="bg-[#141619] h-screen grid grid-cols-9">
         <div className="col-span-4 flex flex-col justify-center items-center gap-12">
             <h1 className="text-5xl text-white font-semibold mb-12">Connect with me</h1>
             <div className="flex gap-3">

@@ -20,7 +20,7 @@ function App() {
   });
 
   const { ref: projectsRef, inView: projectsInView } = useInView({
-    threshold: 0.1, 
+    threshold: 0.05, 
   });
 
   const { ref: contactRef, inView: contactInView } = useInView({
@@ -37,15 +37,15 @@ function App() {
       setCurrentSection('Home')
     } else if (aboutInView) {
       setHeaderColour('text-black');
-      setHeaderBg('bg-white') 
+      setHeaderBg('bg-[#EEE5E9]') 
       setCurrentSection('About')
     } else if (projectsInView) {
       setHeaderColour('text-black');
-      setHeaderBg('bg-[#deccc3]') 
+      setHeaderBg('bg-[#EEE5E9]') 
       setCurrentSection('Projects')
     } else if (contactInView) {
       setHeaderColour('text-white');
-      setHeaderBg('') 
+      setHeaderBg('bg-[#141619]') 
       setCurrentSection('Contact')
     }
     // } else if (skillsInView) {

@@ -13,7 +13,7 @@ function Projects() {
       ];
     
   return (
-    <div id="projects" className="h-full bg-[#deccc3] pb-20">
+    <div id="projects" className="h-full bg-[#EEE5E9] pb-20">
         <h1 className="text-6xl text-gray-600 font-bold pt-40 pl-32 pb-24">My Projects</h1>
         <div className="flex flex-col justify-center items-center">
         {projects.map((project, index) => (
