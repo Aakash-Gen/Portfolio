@@ -37,11 +37,11 @@ function App() {
       setCurrentSection('Home')
     } else if (aboutInView) {
       setHeaderColour('text-black');
-      setHeaderBg('bg-[#EEE5E9]') 
+      setHeaderBg('bg-gray-50') 
       setCurrentSection('About')
     } else if (projectsInView) {
       setHeaderColour('text-black');
-      setHeaderBg('bg-[#EEE5E9]') 
+      setHeaderBg('bg-gray-50') 
       setCurrentSection('Projects')
     } else if (contactInView) {
       setHeaderColour('text-white');

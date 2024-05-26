@@ -22,7 +22,7 @@ function Header(props) {
             <Link to="projects" spy={true} smooth={true} duration={500} offset={-70} className={`hover:cursor-pointer ${getUnderlineClass('Projects')}`} >Projects</Link>
         </div>
         <Link to="contact" spy={true} smooth={true} duration={500} offset={-70} className="hover:cursor-pointer" >
-          <button className='bg-[#D07C43] px-6 py-1.5 rounded-lg text-xl '>Contact</button>
+          <button className='bg-[#D07C43] px-6 py-1.5 rounded-lg text-xl font-medium '>Contact</button>
         </Link>
     </div>
   )

@@ -1,7 +1,7 @@
 
 function Skills() {
   return (
-    <div id="skills" className="h-full flex justify-center pt-24 ">
+    <div id="skills" className="h-full flex flex-col items-center justify-center pt-24 ">
         <div className=" flex flex-wrap w-[70%] justify-center items-center gap-4 p-6">
             <Badge background="bg-blue-700" name="C++" />
             <Badge background="bg-yellow-600" name="Python"/>
@@ -23,6 +23,7 @@ function Skills() {
             <Badge background="bg-gray-700" name="Ganache" />
             <Badge background="bg-purple-800" name="Truffle" />
         </div>
+        {/* <div className="h-[150px] w-[1px] bg-gray-600"></div> */}
     </div>
   )
 }

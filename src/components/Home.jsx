@@ -16,7 +16,7 @@ function Home() {
             <a 
                 href="/resume.pdf" 
                 download 
-                className="bg-[#D07C43] px-6 py-3 rounded-lg w-40 text-white text-xl hover:cursor-pointer shadow-md"
+                className="bg-[#D07C43] px-6 py-3 rounded-lg w-40 text-white text-xl hover:cursor-pointer shadow-md font-medium"
             >
                 My Resume
             </a>

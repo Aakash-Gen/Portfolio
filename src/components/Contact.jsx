@@ -47,9 +47,9 @@ function Contact() {
             </div>
         </div>
         <div className="col-span-1 h-full flex flex-col items-center justify-center pt-10">
-            <div className="bg-white h-[40%] w-0.5"></div>
-            <h2 className="text-white text-lg">OR</h2>
-            <div className="bg-white h-[40%] w-0.5"></div>
+            <div className="bg-gray-500 h-[40%] w-0.5"></div>
+            <h2 className="text-gray-500 text-xl">OR</h2>
+            <div className="bg-gray-500 h-[40%] w-0.5"></div>
         </div>
         <div className="col-span-4 text-white flex flex-col justify-center">
             <h1 className="text-5xl font-semibold mb-12">Send me an Email</h1>
