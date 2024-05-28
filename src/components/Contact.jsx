@@ -30,19 +30,19 @@ function Contact() {
   return (
     <div id="contact" className="bg-[#141619] h-screen grid grid-cols-9">
         <div className="col-span-4 flex flex-col justify-center items-center gap-12">
-            <h1 className="text-5xl text-white font-semibold mb-12">Connect with me</h1>
+            <h1 className="text-[43px] text-white font-semibold mb-8">Connect with me</h1>
             <div className="flex gap-3">
                 <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer" >
-                <FaLinkedin color="white" size={64}/>
+                <FaLinkedin color="white" size={56}/>
                 </a>
                 <a href="https://github.com/Aakash-Gen" target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer" >
-                <FaGithub color="white" size={64}/>
+                <FaGithub color="white" size={56}/>
                 </a>
                 <a href="https://x.com/jain59791" target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer" >
-                <FaXTwitter color="white" size={64}/>
+                <FaXTwitter color="white" size={56}/>
                 </a>
                 <a href="https://www.instagram.com/aakashjain1256/" target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer" >
-                <FaInstagram color="white" size={64}/>
+                <FaInstagram color="white" size={56}/>
                 </a>
             </div>
         </div>
@@ -52,24 +52,24 @@ function Contact() {
             <div className="bg-gray-500 h-[40%] w-0.5"></div>
         </div>
         <div className="col-span-4 text-white flex flex-col justify-center">
-            <h1 className="text-5xl font-semibold mb-12">Send me an Email</h1>
+            <h1 className="text-[42px] font-semibold mb-8">Send me an Email</h1>
             <form onSubmit={handleSubmit}>
             <input
                 type="email"
                 placeholder="Your Email"
-                className="bg-transparent border rounded-md p-3 w-[600px] mb-4"
+                className="bg-transparent border rounded-md p-3 w-[550px] mb-4"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
             />
             <textarea
                 placeholder="Your Message"
-                className="bg-transparent border rounded-md p-3 w-[600px] h-[200px] mb-4"
+                className="bg-transparent border rounded-md p-3 w-[550px] h-[200px] mb-4"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
             />
-            <button type="submit" className="bg-[#D07C43] px-6 py-3 rounded-lg w-40 text-white text-xl">Send</button>
+            <button type="submit" className="bg-[#D07C43] px-4 py-2 rounded-lg w-32 text-white font-medium text-xl">Send</button>
         </form>
 
         </div>

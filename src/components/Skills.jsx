@@ -1,7 +1,7 @@
 
 function Skills() {
   return (
-    <div id="skills" className="h-full flex flex-col items-center justify-center pt-24 ">
+    <div id="skills" className="h-full flex flex-col items-center justify-center pt-24 pr-9 bg-gray-50 ">
         <div className=" flex flex-wrap w-[70%] justify-center items-center gap-4 p-6">
             <Badge background="bg-blue-700" name="C++" />
             <Badge background="bg-yellow-600" name="Python"/>
@@ -23,14 +23,13 @@ function Skills() {
             <Badge background="bg-gray-700" name="Ganache" />
             <Badge background="bg-purple-800" name="Truffle" />
         </div>
-        {/* <div className="h-[150px] w-[1px] bg-gray-600"></div> */}
     </div>
   )
 }
 
 const Badge =(props)=>{
     return(
-        <span className={`badge ${props.background} text-white px-4 py-2 rounded-full`}>{props.name}</span>
+        <span className={`badge ${props.background} text-white px-3 py-1.5 rounded-full`}>{props.name}</span>
     )
 }
 export default Skills
