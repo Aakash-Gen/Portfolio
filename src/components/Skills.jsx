@@ -1,8 +1,9 @@
 
 function Skills() {
   return (
-    <div id="skills" className="h-full flex flex-col items-center justify-center pt-24 pr-9 bg-gray-50 ">
-        <div className=" flex flex-wrap w-[70%] justify-center items-center gap-4 p-6">
+    <div id="skills" className="h-full flex flex-col items-center justify-center pt-24 md:pr-9 bg-gray-50 ">
+        <h1 className="text-gray-600 font-bold text-[28px] md:hidden pb-4">Technical Skills</h1>
+        <div className=" flex flex-wrap md:w-[70%] justify-center items-center gap-4 p-6">
             <Badge background="bg-blue-700" name="C++" />
             <Badge background="bg-yellow-600" name="Python"/>
             <Badge background="bg-orange-500" name="HTML" />

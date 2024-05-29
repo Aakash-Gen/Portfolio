@@ -28,43 +28,43 @@ function Contact() {
             });
     };
   return (
-    <div id="contact" className="bg-[#141619] h-screen grid grid-cols-9">
-        <div className="col-span-4 flex flex-col justify-center items-center gap-12">
-            <h1 className="text-[43px] text-white font-semibold mb-8">Connect with me</h1>
+    <div id="contact" className="bg-[#141619] h-screen grid md:grid-cols-9 pt-20 md:pt-0 pb-6 md:pb-0">
+        <div className="md:col-span-4 flex flex-col justify-center items-center gap-6 md:gap-12">
+            <h1 className="text-[32px] md:text-[43px] text-white font-semibold mb-2 md:mb-8">Connect with me</h1>
             <div className="flex gap-3">
                 <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer" >
-                <FaLinkedin color="white" size={56}/>
+                <FaLinkedin color="white" className="text-[46px] md:text-[56px]"/>
                 </a>
                 <a href="https://github.com/Aakash-Gen" target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer" >
-                <FaGithub color="white" size={56}/>
+                <FaGithub color="white" className="text-[46px] md:text-[56px]"/>
                 </a>
                 <a href="https://x.com/jain59791" target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer" >
-                <FaXTwitter color="white" size={56}/>
+                <FaXTwitter color="white" className="text-[46px] md:text-[56px]"/>
                 </a>
                 <a href="https://www.instagram.com/aakashjain1256/" target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer" >
-                <FaInstagram color="white" size={56}/>
+                <FaInstagram color="white" className="text-[46px] md:text-[56px]"/>
                 </a>
             </div>
         </div>
-        <div className="col-span-1 h-full flex flex-col items-center justify-center pt-10">
-            <div className="bg-gray-500 h-[40%] w-0.5"></div>
+        <div className="md:col-span-1 h-full flex md:flex-col flex-row items-center justify-center md:pt-10">
+            <div className="bg-gray-500 h-0.5 md:h-[40%] w-[40%] md:w-0.5"></div>
             <h2 className="text-gray-500 text-xl">OR</h2>
-            <div className="bg-gray-500 h-[40%] w-0.5"></div>
+            <div className="bg-gray-500 h-0.5 md:h-[40%] w-[40%] md:w-0.5"></div>
         </div>
-        <div className="col-span-4 text-white flex flex-col justify-center">
-            <h1 className="text-[42px] font-semibold mb-8">Send me an Email</h1>
-            <form onSubmit={handleSubmit}>
+        <div className="md:col-span-4 text-white flex flex-col items-center md:items-start justify-center">
+            <h1 className="text-[32px] md:text-[42px] font-semibold mb-8">Send me an Email</h1>
+            <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center md:items-start">
             <input
                 type="email"
                 placeholder="Your Email"
-                className="bg-transparent border rounded-md p-3 w-[550px] mb-4"
+                className="bg-transparent border rounded-md p-3 w-[280px] md:w-[550px] mb-4"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
             />
             <textarea
                 placeholder="Your Message"
-                className="bg-transparent border rounded-md p-3 w-[550px] h-[200px] mb-4"
+                className="bg-transparent border rounded-md p-3 w-[280px] md:w-[550px] h-[120px] md:h-[200px] mb-4"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required

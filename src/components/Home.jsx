@@ -6,12 +6,12 @@ import { FaInstagram } from "react-icons/fa";
 
 function Home() {
   return (
-      <div id="home" className="grid grid-cols-5 h-screen bg-[#141619]">
-        <div className="flex flex-col col-span-2 justify-between pl-5">
-          <div className=" flex flex-grow flex-col justify-center pl-20 pt-4">
-            <p className="text-white text-[38px] font-bold ">I'm Aakash, a</p>
-            <p className="text-white text-[38px] font-bold mb-2 ">Full stack web-developer</p>
-            <p className="text-gray-300 text-md mb-6">"Design. Develop. Deploy."</p>
+      <div id="home" className="grid md:grid-cols-5 h-screen bg-[#141619]">
+        <div className="flex flex-col md:col-span-2 justify-between md:pl-5">
+          <div className=" flex flex-grow flex-col justify-center text-center items-center md:items-start md:pl-20 pt-44 md:pt-4">
+            <p className="text-white text-[26px] md:text-[38px] font-bold mb-2 md:mb-0 ">I'm Aakash, a</p>
+            <p className="text-white text-[42px] md:text-[38px] font-bold mb-2 ">Full stack <span className="block md:inline">web-developer</span></p>
+            <p className="text-gray-300 text-sm md:text-[15px] mb-6">"Design. Develop. Deploy."</p>
             <a 
                 href="/resume.pdf" 
                 download 
@@ -20,7 +20,7 @@ function Home() {
                 My Resume
             </a>
           </div>
-          <div className="pb-8 pl-20 flex flex-col gap-2">
+          <div className="md:pb-8 pt-32 md:pt-0 md:pl-20 flex flex-col items-center md:items-start gap-2">
             <div className="h-[1px] bg-gray-400 w-[250px]"></div>
             <div className="flex items-center gap-2">
               <p className="text-gray-300 mb">Let's connect - </p>
@@ -39,8 +39,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-3 flex flex-col-reverse items-center">
-          <img className="mr-32 h-[550px] w-[550px] " src="/HomePage.png" alt="" />
+        <div className="md:col-span-3 flex flex-col-reverse items-center">
+          <img className="md:mr-32 hidden md:block md:h-[550px] md:w-[550px] " src="/HomePage.png" alt="" />
         </div>
       </div>
   )

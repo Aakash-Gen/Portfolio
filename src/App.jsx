@@ -13,11 +13,11 @@ function App() {
   const [currentSection,setCurrentSection] = useState('Home')
   
   const { ref: homeRef, inView: homeInView } = useInView({
-    threshold: 0.1, 
+    threshold: 0.15, 
   });
 
   const { ref: aboutRef, inView: aboutInView } = useInView({
-    threshold: 0.8, 
+    threshold: 0.7, 
   });
 
   const { ref: projectsRef, inView: projectsInView } = useInView({
@@ -25,10 +25,10 @@ function App() {
   });
 
   const { ref: contactRef, inView: contactInView } = useInView({
-    threshold: 0.9,
+    threshold: 0.8,
   });
   const { ref: skillsRef, inView: skillsInView } = useInView({
-    threshold: 0.05,
+    threshold: 0.5,
   });
 
   useEffect(()=>{
