@@ -13,7 +13,7 @@ function Home() {
             <p className="text-white text-[42px] md:text-[38px] font-bold mb-2 ">Full stack <span className="block md:inline">web-developer</span></p>
             <p className="text-gray-300 text-sm md:text-[15px] mb-6">"Design. Develop. Deploy."</p>
             <a 
-                href="/resume.pdf" 
+                href="/Aakash Jain Resume.pdf" 
                 download 
                 className="bg-[#D07C43] px-4.5 py-2 rounded-lg w-32 text-white flex justify-center text-lg hover:cursor-pointer shadow-md font-medium"
             >
